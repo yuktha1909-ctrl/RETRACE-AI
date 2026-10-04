@@ -1,0 +1,64 @@
+
+/* base.css: load this before styles.css */
+
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  scrollbar-gutter: stable;
+  overflow-x: clip;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: clip;
+  overscroll-behavior-y: none;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  isolation: isolate;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Prevents automatic zoom on iOS Safari inputs */
+input,
+textarea,
+select {
+  font-size: max(16px, 1em);
+}
+
+::selection {
+  background: rgba(241, 138, 203, 0.32);
+  color: #fff;
+}
