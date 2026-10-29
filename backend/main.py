@@ -11,8 +11,10 @@ app = FastAPI(title="RETRACE AI")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=[
+        "https://retrace-ai.vercel.app",
+    ],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -75,7 +77,7 @@ Information:
                 "content": prompt
             }
         ],
-        max_tokens=4000
+        max_tokens=700
     )
 
     return {
