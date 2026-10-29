@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
 
 const API_URL =
@@ -1081,10 +1082,9 @@ function App() {
 
         </section>
       </main>
+      <SpeedInsights />
     </div>
   );
 }
 
-const API_URL =
-  import.meta.env.VITE_API_URL ||
-  "https://retrace-ai-backend.onrender.com";
+export default App;
