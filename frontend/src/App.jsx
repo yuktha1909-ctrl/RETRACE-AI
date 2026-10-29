@@ -1086,3 +1086,5 @@ function App() {
 }
 
 export default App;
+const API_URL =import.meta.env.VITE_API_URL ||
+  "https://retrace-ai-backend.onrender.com";
