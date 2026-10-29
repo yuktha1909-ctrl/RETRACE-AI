@@ -9,6 +9,7 @@ load_dotenv()
 
 app = FastAPI(title="RETRACE AI")
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -18,6 +19,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 client = OpenAI(
     base_url="https://api.tokenfactory.nebius.com/v1/",
